@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    {{title}}
+{% endblock %}
+
+{% block content %}
+    <h1>Home page</h1>
+    <hr>
+    <h2>My favorite Sport</h2>
+    <!-- <ol>
+        {% for sport in sports %}
+                <li>{{ sport }}</li>
+        {% endfor %}
+        
+    </ol> -->
+
+    <ul>
+        {% for sport in sports %}
+                <li>{{ sport }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
