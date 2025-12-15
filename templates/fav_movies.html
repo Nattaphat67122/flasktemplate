@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+    <h1>Home page</h1>
+    <hr>
+    <h2>My favorite Movies</h2>
+    <ul>
+        {% for movie in movies %}
+                <li>{{ movie }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
